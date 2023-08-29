@@ -1,0 +1,84 @@
+.mainContainer{
+  position: relative;
+  height: 50px;
+}
+
+
+.mainContainer::before,
+.mainContainer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  background: linear-gradient(to right, rgb(13, 13, 13, 1), rgb(13, 13, 13, 1));
+  pointer-events: none;
+  z-index: 9000;
+}
+
+.mainContainer::before {
+  left: 0;
+}
+
+.mainContainer::after {
+  right: 0;
+}
+
+
+
+
+.container{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  
+}
+
+.mainContainer .container .image{
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.image{
+  width: 200px !important;
+  height: auto;
+  object-fit: contain;
+}
+
+@media(max-width: 280px){
+  
+  .image{
+    width: 140px !important;
+    height: auto;
+    object-fit: contain;
+  }
+  
+}
+
+@media(max-width: 350px){
+  
+  .image{
+    width: 130px !important;
+    height: auto;
+    object-fit: contain;
+  }
+  
+}
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

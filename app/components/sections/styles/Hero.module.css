@@ -1,0 +1,140 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.heroImg{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 33.33%;
+    transform: translateY(-33.33%);
+    opacity: 0;
+    animation: fade-in 1s ease forwards;
+    z-index: 100;
+  
+  }
+  
+  @media(min-width: 768px){
+    .heroImg{
+      display: block;
+      min-width: 250px;
+      min-height: 250px;
+      
+      right: 4%;
+      transform: translateX(4%);
+      top: 33.33%;
+      transform: translateY(-33.33%);
+  
+    }
+  }
+  @media(min-width: 1024px){
+    .heroImg{
+      display: block;
+      min-width: 315px;
+      min-height: 315px;
+      
+      right: 4%;
+      transform: translateX(4%);
+      top: 33.33%;
+      transform: translateY(-33.33%);
+  
+    }
+  }
+
+  @media(min-width: 1280px){
+    .heroImg{
+      display: block;
+      right: -2%;
+      transform: translateX(2%);
+      top: 33.33%;
+      transform: translateY(-33.33%);
+  
+    }
+  }
+
+  @media(min-width: 1440px){
+    .heroImg{
+      display: block;
+      
+      right: 7%;
+      transform: translateX(4%);
+      top: 33.33%;
+      transform: translateY(-33.33%);
+  
+    }
+  }
+  
+  @media(min-width: 1920px){
+    .heroImg{
+      display: block;
+      right: -2%;
+      transform: translateX(2%);
+      top: 33.33%;
+      transform: translateY(-33.33%);
+    }
+  }
+
+  
+.shapeImg{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 33.33%;
+    transform: translateY(-33.33%);
+    opacity: 0;
+    animation: fade-in 1s ease forwards;
+    z-index: 80;
+  
+  }
+
+  @media(min-width: 1024px){
+    .shapeImg{
+      display: block;
+      min-width: 450px;
+      min-height: 450px;
+      right: -11%;
+      transform: translateX(4%);
+      top: 40%;
+      transform: translateY(-35%);
+  
+    }
+  }
+
+  @media(min-width: 1280px){
+    .shapeImg{
+      display: block;
+      right: -11%;
+      transform: translateX(4%);
+      top: 40%;
+      transform: translateY(-35%);
+  
+    }
+  }
+
+  @media(min-width: 1440px){
+    .shapeImg{
+      display: block;
+      
+      right: -11%;
+      transform: translateX(4%);
+      top: 40%;
+      transform: translateY(-35%);
+  
+    }
+  }
+  
+  @media(min-width: 1920px){
+    .shapeImg{
+      display: block;
+      right: -2%;
+      transform: translateX(2%);
+      top: 33.33%;
+      transform: translateY(-33.33%);
+    }
+  }
+
+  
