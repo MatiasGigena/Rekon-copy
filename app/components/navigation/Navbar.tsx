@@ -1,5 +1,5 @@
 "use client";
-import { useCallback, useContext } from "react";
+import { useCallback, useContext, useEffect } from "react";
 import { SideMenu } from "../sidemenu/SideMenu";
 import RekonMediaSVG from "../svg/RekonMediaSVG";
 import NavbarItem from "./NavbarItem";
@@ -9,20 +9,21 @@ import Scroll from "locomotive-scroll";
 import { useRouter } from "next/navigation";
 
 const Navbar = ({ locomotiveScroll }: { locomotiveScroll: Scroll }) => {
-  
-  let prevScrollpos = window.scrollY;
-  window.onscroll = function () {
-    let navbar = document.getElementById("navbar");
-    let currentScrollPos = window.scrollY;
-    if (navbar) {
-      if (prevScrollpos > currentScrollPos) {
-        navbar.style.scale = "1";
-      } else {
-        navbar.style.scale = "0";
+  useEffect(() => {
+    window.onscroll = function () {
+      let navbar = document.getElementById("navbar");
+      let currentScrollPos = window.scrollY;
+      if (navbar) {
+        if (prevScrollpos > currentScrollPos) {
+          navbar.style.scale = "1";
+        } else {
+          navbar.style.scale = "0";
+        }
       }
-    }
-    prevScrollpos = currentScrollPos;
-  };
+      prevScrollpos = currentScrollPos;
+    };
+  },[])
+  let prevScrollpos = window.scrollY;
   const router = useRouter();
   const { actualFragmentURL, updateFragmentURL } = useContext(UIContext);
   const handleClickLink = useCallback(
