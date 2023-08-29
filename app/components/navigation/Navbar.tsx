@@ -22,8 +22,8 @@ const Navbar = ({ locomotiveScroll }: { locomotiveScroll: Scroll }) => {
       }
       prevScrollpos = currentScrollPos;
     };
+    let prevScrollpos = window.scrollY;
   },[])
-  let prevScrollpos = window.scrollY;
   const router = useRouter();
   const { actualFragmentURL, updateFragmentURL } = useContext(UIContext);
   const handleClickLink = useCallback(
