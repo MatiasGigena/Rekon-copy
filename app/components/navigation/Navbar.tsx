@@ -10,19 +10,21 @@ import { useRouter } from "next/navigation";
 
 const Navbar = ({ locomotiveScroll }: { locomotiveScroll: Scroll }) => {
   useEffect(() => {
-    window.onscroll = function () {
-      let navbar = document.getElementById("navbar");
-      let currentScrollPos = window.scrollY;
-      if (navbar) {
-        if (prevScrollpos > currentScrollPos) {
-          navbar.style.scale = "1";
-        } else {
-          navbar.style.scale = "0";
-        }
-      }
-      prevScrollpos = currentScrollPos;
-    };
-    let prevScrollpos = window.scrollY;
+   if (window.innerWidth && window.innerWidth >= 1024) {
+     window.onscroll = function () {
+       let navbar = document.getElementById("navbar");
+       let currentScrollPos = window.scrollY;
+       if (navbar) {
+         if (prevScrollpos > currentScrollPos) {
+           navbar.style.scale = "1";
+         } else {
+           navbar.style.scale = "0";
+         }
+       }
+       prevScrollpos = currentScrollPos;
+     };
+     let prevScrollpos = window.scrollY;
+   }
   },[])
   const router = useRouter();
   const { actualFragmentURL, updateFragmentURL } = useContext(UIContext);
