@@ -59,7 +59,7 @@ const Navbar = ({ locomotiveScroll }: { locomotiveScroll: Scroll }) => {
           h-[3rem]
           items-center
           justify-between
-          lg:h-[3.9rem]
+          lg:h-[4rem]
           max-w-[1920px]
           mx-auto
           px-7
@@ -70,7 +70,7 @@ const Navbar = ({ locomotiveScroll }: { locomotiveScroll: Scroll }) => {
       
         ">
           <button
-            className="relative lg:mb-1
+            className="relative
             w-[15%]
             min-h-[16px]
             min-w-[140px]
@@ -84,7 +84,6 @@ const Navbar = ({ locomotiveScroll }: { locomotiveScroll: Scroll }) => {
           </button>
           <div
             className="
-      
               flex-row
               xl:gap-[3.3rem]
               lg:gap-8
