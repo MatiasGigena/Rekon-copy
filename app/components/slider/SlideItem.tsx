@@ -36,7 +36,6 @@ border-t
         <p
           className={` 
                 pt-4
-                md:pt-8
                 ${montserrat.className}   
                 leading-6
                 lg:leading-[3rem]
