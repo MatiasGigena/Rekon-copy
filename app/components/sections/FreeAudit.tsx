@@ -181,6 +181,7 @@ const FreeAudit = () => {
                             lg:self-end
                             lg:w-[242px]
                             lg:h-[50px]
+                            rounded-[9px]
                             md:rounded-[10px] 
                             hover:scale-105 
                             hover:transition-all 

@@ -1,32 +1,40 @@
-'use client';
+"use client";
 
 import { inter, montserrat } from "../fonts";
 
 interface SlideItemProps {
-    id: number;
-    svg: any;
-    text: string;
-    description: any;
+  id: number;
+  svg: any;
+  text: string;
+  description: any;
 }
-const SlideItem:React.FC<SlideItemProps> = ({id, svg:Svg, text, description}) => {
-    
+const SlideItem: React.FC<SlideItemProps> = ({ id, svg: Svg, text, description }) => {
   return (
     <>
-        
-        <div className={` 
+      <div
+        className={` 
             flex
             flex-col
             justify-center
             items-center
-            xl:w-[350px]
+            xl:w-[391.38px]
             relative
+borderB
+border-0
+border-t            
+            rounded-t-[16px]
+          border-gray-400
+            px-6
+            pb-2
+            lg:mb-8
+            xl:mb-0
+
             
         `}>
-      
-            {Svg}
-               
-            <p
-                className={` 
+        <img src={Svg} alt="" className="bg-black color2 shadow2 h-40 rounded-2xl mt-[-5rem] " />
+
+        <p
+          className={` 
                 pt-4
                 md:pt-8
                 ${montserrat.className}   
@@ -35,17 +43,20 @@ const SlideItem:React.FC<SlideItemProps> = ({id, svg:Svg, text, description}) =>
                 text-xl
                 font-bold
                 text-[#FFFFFF]
-                xs:text-[15px]
+                xs:text-2xl
                 sm:text-[20px]
-                md:text-3xl
+                md:text-5xl
+                my-10
                 pb-2
                 lg:pb-2
                 text-center
                 z-20
-            `}
-            > {text} </p>
-            <p
-                className={` 
+            `}>
+          {" "}
+          {text}{" "}
+        </p>
+        <p
+          className={` 
                     ${inter.className} 
                     leading-5
                     text-center
@@ -59,11 +70,10 @@ const SlideItem:React.FC<SlideItemProps> = ({id, svg:Svg, text, description}) =>
                     z-20
                     
                 `}
-                dangerouslySetInnerHTML={{ __html: description }}
-            ></p>
-        </div>
+          dangerouslySetInnerHTML={{ __html: description }}></p>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default SlideItem
+export default SlideItem;

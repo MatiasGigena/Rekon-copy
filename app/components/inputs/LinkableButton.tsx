@@ -20,7 +20,7 @@ interface ButtonProps {
 
 const BUTTON_TYPES = {
   primary: "bg-[#0D0D0D] text-white",
-  secondary: "bg-white text-black",
+  secondary: "bg-white",
   invisible: "bg-opacity-0 text-white",
 };
 
@@ -50,7 +50,6 @@ const LinkableButton: React.FC<ButtonProps> = ({ className, buttonType, text, hr
     <Link
       className={`
                 ${BUTTON_TYPES[buttonType]} 
-                rounded-[9px] 
                 ${montserrat.className}
                 font-bold
                 w-44

@@ -75,11 +75,10 @@ const AboutUs = () => {
           </>}
         {width && width < 640 &&
           <>
-            <Image className="absolute xs:left-1 xs:top-[10rem]  xsm:left-1 xsm:top-[10rem]" src="/3D Shape.png" alt="RekonMedia Logo" height={20} width={50} quality={100} />
-            <Image className="absolute xs:right-3 xs:top-[21.8rem] xsm:right-1 xsm:top-[18.5rem]  z-[-30] " src="/3D Torus.png" alt="RekonMedia Logo" height={20} width={50} quality={100} />
-            <Image className="absolute xs:top-[21rem] xsm:top-[16rem]  z-[-30] " src="/Linea.png" alt="RekonMedia Logo" height={20} width={1000} quality={100} />
+            <Image className="absolute left-2 top-40 " src="/3D Shape.png" alt="RekonMedia Logo" height={20} width={50} quality={100} />
+            <Image className="absolute xsm:top-[18.5rem] xs:top-[22rem] ift:top-[21rem] right-2  z-[-30] " src="/3D Torus.png" alt="RekonMedia Logo" height={20} width={50} quality={100} />
           </>}
-
+      
     </section>
   )
 }

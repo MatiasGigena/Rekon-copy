@@ -2,61 +2,76 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   * {
     @apply border-border;
   }
   body {
-    font-feature-settings: 'rlig' 1, 'calt' 1;
+    font-feature-settings: "rlig" 1, "calt" 1;
     overflow: hidden;
-    background-image: url('/Fondo.png');
+    background-image: url("/Fondo.png");
     background-size: contain;
   }
 }
 
-.fondo{
-  background-image: url('/Group.png');
+.fondo {
+  background-image: url("/Group.png");
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
 }
 @media screen and (max-width: 1024px) {
-
   body {
     overflow-y: scroll;
     overflow-x: hidden;
-    
   }
   .fondo {
-    background-image: url('/RM.png');
+    background-image: url("/RM.png");
     background-size: contain;
-    }
-
+  }
 }
 @media screen and (max-width: 768px) {
-
   body {
-background-size: cover ;
-background-position: center;
+    background-size: cover;
+    background-position: center;
   }
 }
 @media screen and (max-width: 640px) {
-
-.fondo{
-  background-image: none;
+  .fondo {
+    background-image: none;
+  }
 }
-}
 
-.linear{
+.linear {
   background: linear-gradient(260.83deg, rgba(86, 4, 226, 0.63) 0%, rgba(139, 84, 255, 0.595) 100%),
-linear-gradient(180deg, rgba(130, 70, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
-
+    linear-gradient(180deg, rgba(130, 70, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
-.linearB{
+.linearB {
   border: 1px solid;
+  border-image-source: linear-gradient(180deg, rgba(130, 70, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.durati {
+  transition-duration: 350ms;
+}
 
-border-image-source: linear-gradient(180deg, rgba(130, 70, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+.colorB {
+  background: linear-gradient(180deg, rgba(15, 15, 18, 0.75) 0%, rgba(22, 21, 28, 0.75) 100%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(12, 11, 20, 0) 100%);
+}
+.borderB {
+  background: radial-gradient(circle at 100% 100%, #111115 0, #111115 7px, transparent 7px) 0% 0%/8px 8px no-repeat,
+            radial-gradient(circle at 0 100%, #111115 0, #111115 7px, transparent 7px) 100% 0%/8px 8px no-repeat,
+            radial-gradient(circle at 100% 0, #111115 0, #111115 7px, transparent 7px) 0% 100%/8px 8px no-repeat,
+            radial-gradient(circle at 0 0, #111115 0, #111115 7px, transparent 7px) 100% 100%/8px 8px no-repeat,
+            linear-gradient(#111115, #111115) 50% 50%/calc(100% - 2px) calc(100% - 16px) no-repeat,
+            linear-gradient(#111115, #111115) 50% 50%/calc(100% - 16px) calc(100% - 2px) no-repeat,
+            linear-gradient(0deg, transparent 34%, #ababab 100%);
+}
 
+.color2 {
+  background: linear-gradient(45deg, #0f0f12 33.57%, #1a1a1c 100%);
+}
 
+.shadow2 {
+  box-shadow: 0px 3.6238934993743896px 11.7776536941528316px 6.341813564300537px rgba(22, 21, 25, 0.36);
 }
