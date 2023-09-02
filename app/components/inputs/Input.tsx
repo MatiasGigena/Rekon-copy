@@ -28,7 +28,7 @@ const Input:React.FC<InputProps> = ({
     onChange = null,
     action,
     errors,
-    inputStyles = "bg-[#0D0D0D]",
+    inputStyles = "bg-white",
 }) => {
   return (
     <div className="w-full relative">
@@ -53,16 +53,17 @@ const Input:React.FC<InputProps> = ({
                 outline-none
                 text-[10px]
                 sm:text-[12px]
-                text-white
+                text-black
                 lg:mt-1
                 lg:text-md
                 transition
                 disabled:opacity-70
+                text-center
                 disabled:cursor-not-allowed
                 h-10 
-                sm:h-12
+                sm:h-[70px]
                 break-words
-                lg:h-[67px]
+                lg:h-[101px]
                 lg:rounded-2xl
                 ${errors && errors[id] ? 'focus:border-rose-500' : 'focus:border-black'}
             `}

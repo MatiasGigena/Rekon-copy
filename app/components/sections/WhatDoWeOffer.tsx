@@ -110,7 +110,7 @@ const WhatDoWeOffer = () => {
             <Image className="absolute xs:top-6 xs:right-1 md:top-6 md:right-4 " src="/Cone2.png" alt="RekonMedia Logo" height={20} width={75} quality={100} />
             <Image className="absolute xs:top-40  xs:left-0 md:top-40 opacity-20 md:left-0 " src="/spec.png" alt="RekonMedia Logo" height={20} width={140} quality={100} />
             <Image className="absolute xs:scale-125 xs:bottom-2 xs:left-[1rem] md:scale-110 md:bottom-2 md:left-[-2rem] " src="/conemitad.png" alt="RekonMedia Logo" height={20} width={1000} quality={100} />
-            <Image className="absolute xs:right-[-4rem] xs:bottom-[-2rem] brightness-125 md:right-0 md:bottom-[-2rem] " src="/Forma fondo.png" alt="RekonMedia Logo" height={20} width={500} quality={100} />
+            <Image className="absolute xs:right-[-4rem] xs:bottom-[0rem] md:right-0 md:bottom-[0rem] " src="/Forma fondo.png" alt="RekonMedia Logo" height={20} width={500} quality={100} />
           </>}
       </div>
     </section>
