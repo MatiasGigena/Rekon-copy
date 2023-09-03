@@ -16,6 +16,8 @@ import SendInfo from "../svg/SendInfo";
 import { toast } from 'react-hot-toast';
 import { freeAuditValidations } from "../../helpers/formValidations";
 import PopUpReachingOut from "../popups/PopUpReachingOut";
+import { useWindowDimensions } from "../../hooks/useWindowDimensions";
+import Image from "next/image";
 
 interface FAQ_Item {
     title: string;
@@ -54,6 +56,7 @@ export const FAQ_ITEM:FAQ_Item[] = [
 
 const FAQs = () => {
 
+    const { width } = useWindowDimensions();
     const [isLoading, setIsLoading] = useState<boolean>(false);
     const [showPopup, setShowPopup] = useState<boolean>(false);
     const [doubt, setDoubt] = useState<string>('');
@@ -107,7 +110,8 @@ const FAQs = () => {
     <section
 
         className="
-        py-20 
+        py-10
+        sm:py-20 
         flex 
         flex-col
         items-center
@@ -117,10 +121,10 @@ const FAQs = () => {
         justify-center
         px-7 
         xl:px-[7.4rem]
-        xl:py-[11rem]
+        xl:py-[8rem]
         2xl:px-[17rem]
-        2xl:py-[11rem]
         lg:gap-5
+        relative
         
         "
     
@@ -131,14 +135,14 @@ const FAQs = () => {
             ${montserrat.className} 
             leading-6
             text-xl
-            font-bold
+            font-medium
             text-[#FFFFFF]
             w-full
-            
             text-center
-            sm:text-2xl
-            md:text-3xl
-            lg:text-4xl
+            sm:text-4xl
+            lg:text-[65px]
+            xl:text-[70px]
+            3xl:text-[76px]
             pb-2
             lg:pb-5
         `}
@@ -148,7 +152,11 @@ const FAQs = () => {
                 ${inter.className}
                 w-full
                 text-white
-                
+                flex 
+                flex-col
+                items-center
+                sm:mt-5
+                lg:mt-16
             `}
         >
             {
@@ -158,15 +166,25 @@ const FAQs = () => {
                         key={item.title}
                         value={`item-${index}`} className={` 
                                 ${inter.className}
-                                mt-3
-                                md:mt-4
+                                xs:mt-4
+                                sm:mt-7
                                 lg:mt-8
                                 rounded-md
-                                lg:rounded-2xl
+                                xs:rounded-[16px]
+                                sm:rounded-[24px]
+                                md:rounded-[28px]
                                 lg:px-8
-                                bg-[#6300FF]
+                                sm:py-2
+                                bg-transparent
+                                w-[288px]
+                                xs:w-[330px]
+                                lg:w-[818px]
+                                sm:w-[590px]
+                                md:w-[630px]
+                                md:py-4
                                 px-4
-                                border-0
+                                border
+                                border-white
                                 text-[10px]
                                 md:text-lg
                                 lg:py-0
@@ -189,115 +207,134 @@ const FAQs = () => {
             }
            
         </Accordion>
-        <div
-            className="
-                bg-[#1E1E1E]
-                w-full
-                py-1
-                sm:py-2
-                lg:py-4
-                lg:mt-5
-                rounded-2xl
-                relative
-                
-            "
-        >
-            { !showPopup && (
-                <>
-                 <p
-                 className={`
-                     ${inter.className}
-                     font-semibold
-                     text-[10px]
-                     sm:text-sm
-                     md:text-md
-                     lg:text-lg
-                     text-[#FAFAFA]
-                     px-4
-                     sm:px-7
-                     md:px-9
-                     pt-2
-                     md:py-2
-                     
-                    
-                 `}
-             >Do you have any questions that we did not include here? </p>
-             <div
-             className="
-                 py-2
-                 lg:py-0
-                 w-[95%]
-                 m-auto
-                 flex
-                 flex-col
-                 gap-2
-             "
-             >
-                  <Input
-                     id="email"
-                     label="Your email..."
-                     type="text"
-                     action={action}
-                     errors={undefined}
-                     inputStyles={'bg-[#737373]  bg-opacity-5 text-[10px] lg:!text-[15px] word-wrap !rounded-[10px] h-8 sm:h-8 lg:h-10  '}
-                     name="email"
-                     placeholder="Your email..."
-                 />
+        <div className="w-full z-40 flex justify-center items-center">
+            <div
+                className="
+                    borderB23
+                    border-t
+                    border-t-[#575757]
+                    py-1
+                    xs:px-2
+                    xs:py-2
+                    sm:py-2
+                    xs:mt-7
+                    sm:mt-12
+                    lg:mt-20
+                    lg:w-[818px]
+                    lg:h-[275px]
+                    sm:w-[590px]
+                    md:w-[630px]
+                    xs:w-[330px]
+                    rounded-2xl
+                    relative
+            
+                "
+            >
+                { !showPopup && (
+                    <>
+                     <p
+                     className={`
+                         ${inter.className}
+                         font-normal
+                         text-[10px]
+                         sm:text-lg
+                         md:text-xl
+                         lg:text-[27.5px]
+                         text-[#FAFAFA]
+                         px-4
+                         xs:py-2
+                         sm:py-4
+                         sm:px-7
+                         md:px-9
+                         lg:py-8
+            
+            
+                     `}
+                 >Do you have any questions that we did not include here? </p>
                  <div
-                     className="
-                         flex
-                         flex-row
-                         gap-2
-                         
-                     "
+                 className="
+                     py-2
+                     lg:py-0
+                     w-[95%]
+                     m-auto
+                     flex
+                     flex-col
+                     xs:gap-4
+                 "
                  >
-                     <TextArea
-                         value={doubt}
-                         id="doubt"
-                         label="Write your doubts..."
+                      <Input
+                         id="email"
+                         label="Your email..."
                          type="text"
-                         event={setDoubt}
                          action={action}
                          errors={undefined}
-                         inputStyles={'bg-[#737373]  bg-opacity-5 text-[10px] !rounded-[10px] lg:!text-[15px] word-wrap h-12 sm:h-12 lg:h-14  flex-1 '}
-                         name="doubt"
-                         placeholder="Write your doubts..."
+                         inputStyles={'bg-[#737373] !text-left xs:!rounded-[10px]  bg-opacity-5 text-[10px] lg:!text-[15px] word-wrap sm:!rounded-[14px] xs:!h-7 sm:!h-10 lg:!h-[52px]  '}
+                         name="email"
+                         placeholder="Your email..."
                      />
-                    
-                    <SVGButton 
-                         className=" h-full self-stretch lg:m-1"
-                         type="submit" 
-                         isLoading={isLoading} 
-                         children={<SendInfo event={handleSubmit(onSubmit)}/>} 
-                    />
-                     
- 
- 
+                     <div
+                         className="
+                             flex
+                             flex-row
+                             gap-2
+            
+                         "
+                     >
+                         <TextArea
+                             value={doubt}
+                             id="doubt"
+                             label="Write your doubts..."
+                             type="text"
+                             event={setDoubt}
+                             action={action}
+                             errors={undefined}
+                             inputStyles={'bg-[#737373] xs:!rounded-[10px]  bg-opacity-5 text-[10px] sm:!rounded-[14px] lg:!text-[15px] word-wrap xs:!h-8 xs:!w-[248px] sm:!h-10 sm:!w-[490px] md:!w-[527px] lg:!h-[52px] lg:!w-[697px] '}
+                             name="doubt"
+                             placeholder="Write your doubts..."
+                         />
+            
+                        <SVGButton
+                             className=" h-full self-stretch xs:mt-[5px] sm:mt-0 lg:m-1"
+                             type="submit"
+                             isLoading={isLoading}
+                             children={<SendInfo event={handleSubmit(onSubmit)}/>}
+                        />
+            
+                     </div>
                  </div>
- 
-             </div>
-             </>
-            ) ||
-            (
-                
-                <div className='
-                    w-full
-                    py-0
-                    m-auto
-                    xl:w-[82%]
-                    2xl:w-3/4
-                '>
-                    <PopUpReachingOut
-                        containerStyles="bg-[#1E1E1E] bg-opacity-0 xl:mt-0"
-                        title="Thanks for sending your doubt!"
-                        subtitle="We will answer you as soon as possible!"
-
-                    />
-                </div>
-            )}
+                 </>
+                ) ||
+                (
             
+                    <div className='
+                        w-full
+                        py-0
+                        m-auto
+                        xl:w-[82%]
+                        2xl:w-3/4
+                    '>
+                        <PopUpReachingOut
+                            containerStyles="bg-[#1E1E1E] bg-opacity-0 xl:mt-0"
+                            title="Thanks for sending your doubt!"
+                            subtitle="We will answer you as soon as possible!"
+                        />
+                    </div>
+                )}
             
+        </div>      
         </div>
+        {width && width >= 640 &&
+          <>
+            <Image className="absolute sm:scale-50 sm:top-0 sm:right-[-4rem] lg:top-28 xl:top-36 lg:scale-75 lg:right-[-2rem] 2xl:scale-100 2xl:right-0" src="/Asset.png" alt="RekonMedia Logo" height={20} width={250} quality={100} />
+            <Image className="absolute sm:scale-50 sm:bottom-20 sm:left-[-4rem]  lg:scale-75  lg:left-[-2rem] 2xl:scale-100 2xl:left-0 bottom-72" src="/Asset2.png" alt="RekonMedia Logo" height={20} width={280} quality={100} />
+            <Image className="absolute left-0 bottom-0" src="/ShapeBlack.png" alt="RekonMedia Logo" height={20} width={750} quality={100} />
+          </>}
+        {width && width < 640 &&
+          <>
+            <Image className="absolute right-0 top-0 " src="/Asset.png" alt="RekonMedia Logo" height={20} width={70} quality={100} />
+            <Image className="absolute bottom-0 z-20 left-0" src="/Asset3.png" alt="RekonMedia Logo" height={20} width={120} quality={100} />
+            <Image className="absolute z-10 left-0 bottom-0 opacity-70" src="/ShapeBlack.png" alt="RekonMedia Logo" height={20} width={170} quality={100} />
+          </>}
     </section>
   )
 }

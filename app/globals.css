@@ -65,7 +65,7 @@
     radial-gradient(circle at 0 0, #111115 0, #111115 7px, transparent 7px) 100% 100%/8px 8px no-repeat,
     linear-gradient(#111115, #111115) 50% 50% / calc(100% - 2px) calc(100% - 16px) no-repeat,
     linear-gradient(#111115, #111115) 50% 50% / calc(100% - 16px) calc(100% - 2px) no-repeat,
-    linear-gradient(0deg, transparent 34%, #ababab 100%);
+    linear-gradient(0deg, transparent 34%, #575757 100%);
 }
 
 .color2 {
@@ -89,3 +89,18 @@
   background: rgb(0,0,0);
 background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(255,255,255,0.5) 0%, rgba(0,0,0,0) 100%);
 }
+.lineargrad{
+  background: linear-gradient(225deg, rgba(36, 36, 39, 0.65) 5.77%, #0F0F12 106.73%);
+
+}
+
+.borderB23 {
+  background: radial-gradient(circle at 100% 100%, #181818 0, #181818 7px, transparent 7px) 0% 0%/8px 8px no-repeat,
+    radial-gradient(circle at 0 100%, #181818 0, #181818 7px, transparent 7px) 100% 0%/8px 8px no-repeat,
+    radial-gradient(circle at 100% 0, #181818 0, #181818 7px, transparent 7px) 0% 100%/8px 8px no-repeat,
+    radial-gradient(circle at 0 0, #181818 0, #181818 7px, transparent 7px) 100% 100%/8px 8px no-repeat,
+    linear-gradient(#181818, #181818) 50% 50% / calc(100% - 2px) calc(100% - 16px) no-repeat,
+    linear-gradient(#181818, #181818) 50% 50% / calc(100% - 16px) calc(100% - 2px) no-repeat,
+    linear-gradient(0deg, transparent 34%, #575757 100%);
+}
+

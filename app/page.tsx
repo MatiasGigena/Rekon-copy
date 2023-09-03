@@ -42,11 +42,11 @@ export default function Home() {
         <AboutUs />
         <WhatDoWeOffer />
         <FreeAudit />
-        <div className="bg-[#0D0D0D]">
+        <div className="bg-[#0F0F12]">
           <FAQs />
+        </div>
           <Calendar />
           <AboutCEO />
-        </div>
       </div>
       <Footer locomotiveScroll={locomotiveScroll} />
     </main>

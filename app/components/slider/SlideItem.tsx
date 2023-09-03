@@ -23,7 +23,7 @@ borderB
 border-0
 border-t            
             rounded-t-[16px]
-          border-gray-400
+          border-t-[#575757]
             px-6
             pb-2
             lg:mb-8
