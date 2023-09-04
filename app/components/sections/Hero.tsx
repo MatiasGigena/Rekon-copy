@@ -88,7 +88,7 @@ const Hero = ({ locomotiveScroll }: { locomotiveScroll: Scroll }) => {
               <Image
                   className="transition-opacity"
                   priority={true}
-                  src="/3D Icon.png"
+                  src="/3D Icon.svg"
                   alt="hero img"
                   quality={100}
                   fill

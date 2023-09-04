@@ -219,7 +219,6 @@ const FAQs = () => {
                     sm:py-2
                     xs:mt-7
                     sm:mt-12
-                    lg:mt-20
                     lg:w-[818px]
                     lg:h-[275px]
                     sm:w-[590px]
@@ -326,7 +325,7 @@ const FAQs = () => {
         {width && width >= 640 &&
           <>
             <Image className="absolute sm:scale-50 sm:top-0 sm:right-[-4rem] lg:top-28 xl:top-36 lg:scale-75 lg:right-[-2rem] 2xl:scale-100 2xl:right-0" src="/Asset.png" alt="RekonMedia Logo" height={20} width={250} quality={100} />
-            <Image className="absolute sm:scale-50 sm:bottom-20 sm:left-[-4rem]  lg:scale-75  lg:left-[-2rem] 2xl:scale-100 2xl:left-0 bottom-72" src="/Asset2.png" alt="RekonMedia Logo" height={20} width={280} quality={100} />
+            <Image className="absolute sm:scale-50 sm:bottom-20 sm:left-[-4rem]  lg:scale-75  lg:left-[-2rem] 2xl:scale-100 2xl:left-0 bottom-72" src="/Asset (2).png" alt="RekonMedia Logo" height={20} width={280} quality={100} />
             <Image className="absolute left-0 bottom-0" src="/ShapeBlack.png" alt="RekonMedia Logo" height={20} width={750} quality={100} />
           </>}
         {width && width < 640 &&
