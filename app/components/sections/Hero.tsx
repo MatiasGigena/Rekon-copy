@@ -1,5 +1,5 @@
 'use client';
-import { montserrat } from "../fonts"
+import { BrsonmediaMedium, BrsonmediaRegular, montserrat } from "../fonts"
 import LinkableButton from "../inputs/LinkableButton";
 import { TypeAnimation } from "react-type-animation";
 import styles from './styles/Hero.module.css'
@@ -45,7 +45,7 @@ const Hero = ({ locomotiveScroll }: { locomotiveScroll: Scroll }) => {
             >
         <h1
         className={`
-            ${montserrat.className}
+        ${width && width >= 640 ? BrsonmediaRegular.className : montserrat.className}
             text-[35px]
             h-24
             leading-10

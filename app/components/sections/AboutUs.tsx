@@ -75,8 +75,8 @@ const AboutUs = () => {
           </>}
         {width && width < 640 &&
           <>
-            <Image className="absolute left-2 top-40 " src="/3D Shape.svg" alt="RekonMedia Logo" height={20} width={50} quality={100} />
-            <Image className="absolute xsm:top-[18.5rem] xs:top-[22rem] ift:top-[21rem] right-2  z-[-30] " src="/3D Torus.svg" alt="RekonMedia Logo" height={20} width={50} quality={100} />
+            <Image className="absolute left-2 top-40 " src="/3D Shape (1).png" alt="RekonMedia Logo" height={20} width={50} quality={100} />
+            <Image className="absolute xsm:top-[18.5rem] xs:top-[22rem] ift:top-[21rem] right-2  z-[-30] " src="/3D Torus (1).png" alt="RekonMedia Logo" height={20} width={50} quality={100} />
           </>}
       
     </section>

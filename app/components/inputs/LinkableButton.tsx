@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { montserrat } from "../fonts";
+import { BrsonmediaBold, montserrat } from "../fonts";
 import { useCallback, useContext } from "react";
 import { UIContext } from "../../context/ui";
 import Scroll from "locomotive-scroll";
@@ -50,7 +50,7 @@ const LinkableButton: React.FC<ButtonProps> = ({ className, buttonType, text, hr
     <Link
       className={`
                 ${BUTTON_TYPES[buttonType]} 
-                ${montserrat.className}
+                ${width && width >= 640 ? BrsonmediaBold.className : montserrat.className}
                 font-bold
                 w-44
                 h-11
