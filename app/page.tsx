@@ -45,8 +45,10 @@ export default function Home() {
         <div className="bg-[#0F0F12]">
           <FAQs />
         </div>
-          <Calendar />
-          <AboutCEO />
+          <div className="bg-[#6300FF]">
+            <Calendar />
+            <AboutCEO />
+          </div>
       </div>
       <Footer locomotiveScroll={locomotiveScroll} />
     </main>

@@ -14,9 +14,9 @@ const CalendlyWidget = () => {
   }, []);
 
   return (
-    <div className="calendly-inline-widget w-full  lg:w-[45%]  overflow-y-hidden scrollbar scrollbar-thumb-blue-400 scrollbar-track-gray-100 rounded-[37px]  " data-url="https://calendly.com/rekonmedia/meeting?hide_gdpr_banner=1" 
+    <div className="calendly-inline-widget w-full md:w-[70%] calendarshadow  lg:w-[45%]  overflow-y-hidden scrollbar scrollbar-thumb-blue-400 scrollbar-track-gray-100 rounded-[37px]  " data-url="https://calendly.com/rekonmedia/meeting?hide_gdpr_banner=1" 
     
-    style={{  height: '700px', display: 'flex', justifyContent:'row', borderRadius: '37px'}}></div>
+    style={{  height: '680px', display: 'flex', justifyContent:'row', borderRadius: '37px'}}></div>
   );
 }
 

@@ -238,7 +238,7 @@ const FAQs = () => {
                          text-[10px]
                          sm:text-lg
                          md:text-xl
-                         lg:text-[27.5px]
+                         lg:text-[27px]
                          text-[#FAFAFA]
                          px-4
                          xs:py-2
@@ -287,7 +287,7 @@ const FAQs = () => {
                              event={setDoubt}
                              action={action}
                              errors={undefined}
-                             inputStyles={'bg-[#737373] xs:!rounded-[10px]  bg-opacity-5 text-[10px] sm:!rounded-[14px] lg:!text-[15px] word-wrap xs:!h-8 xs:!w-[248px] sm:!h-10 sm:!w-[490px] md:!w-[527px] lg:!h-[52px] lg:!w-[697px] '}
+                             inputStyles={'bg-[#737373] xs:!rounded-[10px]  bg-opacity-5 text-[10px] sm:!rounded-[14px] lg:!text-[15px] word-wrap xs:!h-8 xs:!w-[248px] sm:!h-10 sm:!w-[490px] md:!w-[527px] lg:!h-[52px] lg:!w-[684px] '}
                              name="doubt"
                              placeholder="Write your doubts..."
                          />
@@ -326,7 +326,7 @@ const FAQs = () => {
           <>
             <Image className="absolute sm:scale-50 sm:top-0 sm:right-[-4rem] lg:top-28 xl:top-36 lg:scale-75 lg:right-[-2rem] 2xl:scale-100 2xl:right-0" src="/Asset.png" alt="RekonMedia Logo" height={20} width={250} quality={100} />
             <Image className="absolute sm:scale-50 sm:bottom-20 sm:left-[-4rem]  lg:scale-75  lg:left-[-2rem] 2xl:scale-100 2xl:left-0 bottom-72" src="/Asset (2).png" alt="RekonMedia Logo" height={20} width={280} quality={100} />
-            <Image className="absolute left-0 bottom-0" src="/ShapeBlack.png" alt="RekonMedia Logo" height={20} width={750} quality={100} />
+            <Image className="absolute left-0 bottom-0" src="/ShapeBlack.png" alt="RekonMedia Logo" height={20} width={550} quality={100} />
           </>}
         {width && width < 640 &&
           <>

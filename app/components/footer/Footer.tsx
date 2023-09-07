@@ -65,7 +65,7 @@ const Footer = ({ locomotiveScroll }: { locomotiveScroll: Scroll }) => {
             flex 
             flex-col
             lg:flex-row
-            bg-[#600BFC]
+            bg-[#0C0B14]
             items-center
             justify-center
             mx-auto

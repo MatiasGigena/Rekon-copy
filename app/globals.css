@@ -85,13 +85,12 @@
     linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.25) 51.46%, rgba(255, 255, 255, 0) 100%);
 }
 
-.fondogradiente{
-  background: rgb(0,0,0);
-background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(255,255,255,0.5) 0%, rgba(0,0,0,0) 100%);
+.fondogradiente {
+  background: rgb(0, 0, 0);
+  background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
 }
-.lineargrad{
-  background: linear-gradient(225deg, rgba(36, 36, 39, 0.65) 5.77%, #0F0F12 106.73%);
-
+.lineargrad {
+  background: linear-gradient(225deg, rgba(36, 36, 39, 0.65) 5.77%, #0f0f12 106.73%);
 }
 
 .borderB23 {
@@ -103,4 +102,32 @@ background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(255,255,255,0.5) 0%, 
     linear-gradient(#181818, #181818) 50% 50% / calc(100% - 16px) calc(100% - 2px) no-repeat,
     linear-gradient(0deg, transparent 34%, #575757 100%);
 }
+
+.colorbout {
+  background: linear-gradient(260.83deg, rgba(86, 4, 226, 0.9) 0%, rgba(139, 84, 255, 0.75) 100%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0px 4px 33px 2px #965eff66;
+}
+
+.calendarshadow {
+  box-shadow: 0px 4px 10px #00000040;
+}
+
+.colorbout2 {
+  background: linear-gradient(260.83deg, rgba(86, 4, 226, 0.9) 0%, rgba(139, 84, 255, 0.75) 100%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.bordergod {
+ background: radial-gradient(circle at 100% 100%, #181818 0, #181818 7px, transparent 7px) 0% 0%/8px 8px no-repeat,
+    radial-gradient(circle at 0 100%, #181818 0, #181818 7px, transparent 7px) 100% 0%/8px 8px no-repeat,
+    radial-gradient(circle at 100% 0, #181818 0, #181818 7px, transparent 7px) 0% 100%/8px 8px no-repeat,
+    radial-gradient(circle at 0 0, #181818 0, #181818 7px, transparent 7px) 100% 100%/8px 8px no-repeat,
+    linear-gradient(#181818, #181818) 50% 50% / calc(100% - 2px) calc(100% - 16px) no-repeat,
+    linear-gradient(#181818, #181818) 50% 50% / calc(100% - 16px) calc(100% - 2px) no-repeat,
+    linear-gradient(0deg, transparent 34%, rgba(255, 255, 255, 0.25) 100%);
+}
+
+
+
 
