@@ -7,7 +7,7 @@ import {
     useForm
 } from 'react-hook-form';
 import { toast } from 'react-hot-toast';
-import { montserrat } from "../fonts";
+import { BrsonmediaRegular, montserrat } from "../fonts";
 import Light from "../svg/Light";
 import Input from '../inputs/Input';
 import Form from '../Form';
@@ -90,13 +90,13 @@ const FreeAudit = () => {
                 <article className='lg:h-[750px] h-[280px] w-[320px] sm:h-[470px] sm:w-[520px] rounded-[14px] lg:rounded-[40px] flex flex-col backdrop-blur-sm justify-start items-center lg:gap-12 gap-4 sm:gap-8 lg:w-[820px] purpleB'>
                     <div className=' w-full  flex justify-center   bg-gradient-to-r fondogradiente rounded-[6px] lg:rounded-[16px] h-[54px] sm:h-[74px] lg:h-[154px]  items-center'>
                         <div className='lg:rounded-[16px] rounded-[6px] flex w-full lg:h-[152.5px] sm:h-[72px]  h-[53px] purpleB2  items-center shadow-sm justify-center'>
-                            <h3 className={` ${montserrat.className} text-white text-[26.58px] sm:text-[45px] lg:text-[76px]`}>
+                            <h3 className={` ${BrsonmediaRegular.className} text-white text-[26.58px] sm:text-[45px] lg:text-[76px]`}>
                                 Get a <strong>Free Audit</strong>
                             </h3>
                         </div>
                     </div>
                     <div className='lg:px-[3.2rem] px-[38px] text-center'>
-                        <h4 className={`text-white text-[11.58px] sm:text-[21px] lg:text-[34px] ${montserrat.className}`}>
+                        <h4 className={`text-white text-[11.58px] sm:text-[21px] lg:text-[34px] ${BrsonmediaRegular.className}`}>
                             Submit this two simple details and we <strong>will get in touch shortly</strong>
                         </h4>
                     </div>

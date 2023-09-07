@@ -1,6 +1,6 @@
 "use client";
 
-import { inter, montserrat } from "../fonts";
+import { BrsonmediaBold, inter, montserrat } from "../fonts";
 
 interface SlideItemProps {
   id: number;
@@ -36,7 +36,7 @@ border-t
         <p
           className={` 
                 pt-4
-                ${montserrat.className}   
+                ${BrsonmediaBold.className}   
                 leading-6
                 lg:leading-[3rem]
                 text-xl

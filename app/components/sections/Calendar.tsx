@@ -1,6 +1,6 @@
 'use client';
 import dynamic from "next/dynamic"
-import { inter, montserrat } from "../fonts"
+import { BrsonmediaMedium, montserrat } from "../fonts"
 import Email from "../svg/Email"
 import WhatsappIcon from "../svg/WhatsappIcon"
 import Image from "next/image";
@@ -41,7 +41,7 @@ const Calendar = () => {
          <div className="absolute bottom-[920px]"   id="contact"  data-listen-section></div>
         <h6
             className={` 
-                ${montserrat.className}
+                ${BrsonmediaMedium.className}
                 text-[24px]
                 font-medium
                 text-[#FAFAFA]

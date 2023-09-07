@@ -1,6 +1,6 @@
 "use client";
 
-import { montserrat } from "../fonts";
+import { BrsonmediaSemibold, montserrat } from "../fonts";
 import SlideItem from "../slider/SlideItem";
 import { useWindowDimensions } from "../../hooks/useWindowDimensions";
 import Image from "next/image";
@@ -10,14 +10,14 @@ const WhatDoWeOffer = () => {
   const slides = [
     {
       id: 2,
-      img: "/Icono.png",
+      img: "/market.png",
       text: "90-Day Growth",
       description:
         "<strong>Achieve powerful growth</strong> for your <strong>medium-sized business</strong> in <strong>under 90 days</strong> with us. Our tailored strategy <strong>amplifies organic traffic</strong>, transforming your website into a <strong>hub of engagement</strong>. Enjoy the results <strong>without stress</strong>, and <strong>free up time</strong> for what truly matters to you.",
     },
     {
       id: 3,
-      img: "/Seo.png",
+      img: "/rocket.png",
       text: "Market Expansion",
       description:
         "We leverage <strong>influencer marketing</strong> to assist <strong>medium to large-sized apps</strong> in tapping into the often-untapped <strong>Hispanic market and beyond</strong>. Transform the <strong>followers of influencers</strong> into your app's <strong>loyal customers</strong>, and make your app a <strong>sensation in new markets</strong>.",
@@ -64,7 +64,7 @@ const WhatDoWeOffer = () => {
       ">
         <h3
           className={` 
-            ${montserrat.className} 
+            ${BrsonmediaSemibold.className} 
             leading-6
             text-xl
             font-semibold

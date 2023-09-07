@@ -1,7 +1,7 @@
 'use client';
 import Image from "next/image";
 import { useWindowDimensions } from "../../hooks/useWindowDimensions";
-import { inter, montserrat } from "../fonts"
+import { BrsonmediaRegular, inter, montserrat } from "../fonts"
 
 const AboutUs = () => {
   const { width } = useWindowDimensions();
@@ -30,7 +30,7 @@ const AboutUs = () => {
       <div className="absolute top-96" id="aboutUs" data-listen-section></div>
         <div className="linear gap-3 md:gap-5 p-4 md:p-6 lg:p-8 xl:p-12 rounded-[16px] backdrop-blur-sm flex flex-col lg:gap-10 relative">
           <h2 className={
-              `${montserrat.className}
+              `${BrsonmediaRegular.className}
               text-center
               text-xl
               2xs:text-xl

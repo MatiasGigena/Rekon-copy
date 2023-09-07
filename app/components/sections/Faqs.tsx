@@ -5,7 +5,7 @@ import {
     AccordionItem,
     AccordionTrigger,
   } from "../ui/accordion"
-import { inter, montserrat } from "../fonts"
+import { inter, montserrat,BrsonmediaMedium } from "../fonts"
 import Input from "../inputs/Input";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import TextArea from "../inputs/TextArea";
@@ -132,7 +132,7 @@ const FAQs = () => {
          <div className="absolute bottom-[2586px]"  id="faq"  data-listen-section></div>
         <h5
             className={` 
-            ${montserrat.className} 
+            ${BrsonmediaMedium.className} 
             leading-6
             text-xl
             font-medium
@@ -165,7 +165,7 @@ const FAQs = () => {
                         <AccordionItem 
                         key={item.title}
                         value={`item-${index}`} className={` 
-                                ${inter.className}
+                                ${BrsonmediaMedium.className}
                                 xs:mt-4
                                 sm:mt-7
                                 lg:mt-8
@@ -233,7 +233,7 @@ const FAQs = () => {
                     <>
                      <p
                      className={`
-                         ${inter.className}
+                         ${BrsonmediaMedium.className}
                          font-normal
                          text-[10px]
                          sm:text-lg

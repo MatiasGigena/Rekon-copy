@@ -1,6 +1,6 @@
 'use client';
 
-import { montserrat } from "../fonts";
+import { BrsonmediaBold, montserrat } from "../fonts";
 import { Spinner } from "../loading/Spinner";
 
 interface ButtonProps {
@@ -33,7 +33,7 @@ const Button:React.FC<ButtonProps> = (
         className={`
             ${BUTTON_TYPES[buttonType]} 
             rounded-[9px] 
-            ${montserrat.className}
+            ${BrsonmediaBold.className}
             font-bold
             xxs:text-[10px]
             sm:text-md
