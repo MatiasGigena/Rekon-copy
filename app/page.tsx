@@ -35,7 +35,7 @@ export default function Home() {
       <Navbar locomotiveScroll={locomotiveScroll} />
       {width && width <= 640 && <HeroShape />}
       <Hero locomotiveScroll={locomotiveScroll} />
-      <div className="max-w-[1920px] min-h-screen mx-auto bg-[#6300ff]  z-40 relative ">
+      <div className="max-w-[1920px] min-h-screen mx-auto z-40 relative ">
         <div
           className={`w-full min-h-screen absolute mt-[10rem] sm:mt-[13rem] md:mt-[15rem] lg:mt-[18rem] xl:mt-[23rem] 1/2xl:mt-[20rem] 2xl:mt-28 fondo z-[-60]`}></div>
         <Companies />

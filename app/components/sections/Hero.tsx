@@ -45,10 +45,11 @@ const Hero = ({ locomotiveScroll }: { locomotiveScroll: Scroll }) => {
             >
         <h1
         className={`
-        ${width && width >= 640 ? BrsonmediaRegular.className : montserrat.className}
+        ${montserrat.className}
             text-[35px]
             h-24
             leading-10
+            ml-2
             xs:text-5xl
             sm:text-7xl
             md:text-[63px]

@@ -11,6 +11,8 @@
     overflow: hidden;
     background-image: url("/Fondo.png");
     background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #6300FF;
   }
 }
 
