@@ -6,7 +6,6 @@ import WhatsappIcon from "../svg/WhatsappIcon"
 import Image from "next/image";
 import { useWindowDimensions } from "../../hooks/useWindowDimensions";
 import InteractionCard from "../interactioncard/InteractionCard";
-import { FaInstagram } from "react-icons/fa";
 import InstagramLogo from "../svg/InstagramLogo";
 
 const CalendlyWidget = dynamic(() => import('../scripts/Calendly'))
@@ -41,7 +40,7 @@ const Calendar = () => {
          <div className="absolute bottom-[920px]"   id="contact"  data-listen-section></div>
         <h6
             className={` 
-                ${BrsonmediaMedium.className}
+            ${width && width >= 640 ? BrsonmediaMedium.className : montserrat.className}
                 text-[24px]
                 font-medium
                 text-[#FAFAFA]

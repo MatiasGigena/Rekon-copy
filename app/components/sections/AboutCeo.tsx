@@ -1,11 +1,13 @@
 "use client";
 import { FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
-import { BrsonmediaLight, BrsonmediaSemibold, inter, montserrat } from "../fonts";
+import { BrsonmediaSemibold, inter, montserrat } from "../fonts";
 import { Avatar, AvatarFallback } from "../ui/avatar";
 import Link from "next/link";
+import { useWindowDimensions } from "../../hooks/useWindowDimensions";
 
 const AboutCEO = () => {
+  const { width } = useWindowDimensions();
   return (
     <section
       className="flex flex-col xs:flex-row justify-center items-center rounded-xl xl:rounded-[40px] gap-4 xl:gap-5 pt-2 xs:mt-12 sm:mt-14 xl:pt-16 xxs:mt-8 pb-24 
@@ -46,7 +48,7 @@ const AboutCEO = () => {
   ">
         <div className=" py-10 flex h-full justify-between mt-10 items-center w-full flex-col gap-1 xs:gap-3 xl:gap-10 relative">
           <p
-            className={`${BrsonmediaSemibold.className} font-semibold text-[10px]  text-[#FAFAFA]  lg:mb-7 xl:mb-0     xxs:text-[10px] sm:text-base  lg:text-[23px] lg:leading-[30px] 2xl:text-[25.98px]  lg:w-[419px]`}>
+            className={`${width && width >= 640 ?  BrsonmediaSemibold.className : montserrat.className} font-semibold text-[10px]  text-[#FAFAFA]  lg:mb-7 xl:mb-0     xxs:text-[10px] sm:text-base  lg:text-[23px] lg:leading-[30px] 2xl:text-[25.98px]  lg:w-[419px]`}>
             "Your vision, our mission. We're committed to making your online presence a source of strength, not stress.
             If we don't deliver, you don't pay. We're all in, just like you."
           </p>

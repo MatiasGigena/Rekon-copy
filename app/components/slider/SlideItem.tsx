@@ -1,6 +1,7 @@
 "use client";
 
 import { BrsonmediaBold, inter, montserrat } from "../fonts";
+import { useWindowDimensions } from "../../hooks/useWindowDimensions";
 
 interface SlideItemProps {
   id: number;
@@ -9,6 +10,7 @@ interface SlideItemProps {
   description: any;
 }
 const SlideItem: React.FC<SlideItemProps> = ({ id, svg: Svg, text, description }) => {
+  const { width } = useWindowDimensions();
   return (
     <>
       <div
@@ -36,7 +38,8 @@ border-t
         <p
           className={` 
                 pt-4
-                ${BrsonmediaBold.className}   
+                ${width && width >= 640 ? BrsonmediaBold.className : montserrat.className} 
+
                 leading-6
                 lg:leading-[3rem]
                 text-xl

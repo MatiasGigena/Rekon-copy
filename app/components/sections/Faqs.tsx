@@ -132,7 +132,7 @@ const FAQs = () => {
          <div className="absolute bottom-[2586px]"  id="faq"  data-listen-section></div>
         <h5
             className={` 
-            ${BrsonmediaMedium.className} 
+            ${width && width >= 640 ? BrsonmediaMedium.className : montserrat.className} 
             leading-6
             text-xl
             font-medium

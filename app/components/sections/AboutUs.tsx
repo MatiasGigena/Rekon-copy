@@ -30,7 +30,7 @@ const AboutUs = () => {
       <div className="absolute top-96" id="aboutUs" data-listen-section></div>
         <div className="linear gap-3 md:gap-5 p-4 md:p-6 lg:p-8 xl:p-12 rounded-[16px] backdrop-blur-sm flex flex-col lg:gap-10 relative">
           <h2 className={
-              `${BrsonmediaRegular.className}
+              `${width && width >= 640 ? BrsonmediaRegular.className : montserrat.className} 
               text-center
               text-xl
               2xs:text-xl

@@ -64,7 +64,7 @@ const WhatDoWeOffer = () => {
       ">
         <h3
           className={` 
-            ${BrsonmediaSemibold.className} 
+          ${width && width >= 640 ? BrsonmediaSemibold.className : montserrat.className} 
             leading-6
             text-xl
             font-semibold

@@ -2,6 +2,7 @@
 
 import { BrsonmediaBold, montserrat } from "../fonts";
 import { Spinner } from "../loading/Spinner";
+import { useWindowDimensions } from "../../hooks/useWindowDimensions";
 
 interface ButtonProps {
     className?: string;
@@ -28,12 +29,13 @@ const Button:React.FC<ButtonProps> = (
         type = "button"
     }
 ) => {
+    const { width } = useWindowDimensions();
   return (
     <button 
         className={`
             ${BUTTON_TYPES[buttonType]} 
             rounded-[9px] 
-            ${BrsonmediaBold.className}
+            ${width && width >= 640 ? BrsonmediaBold.className : montserrat.className}
             font-bold
             xxs:text-[10px]
             sm:text-md
