@@ -124,8 +124,8 @@ const Calendar = () => {
         {width && width < 1024 &&
           <>
             <Image className="absolute md:left-0 top-44 z-[-30] " src="/Shape blur.svg" alt="RekonMedia Logo" height={882} width={498}  quality={100} />
-            <Image className="absolute scale-[0.65] top-20 right-[263px] md:top-24 md:left-10" src="/Navigation.png" alt="RekonMedia Logo" height={20} width={173} quality={100} />
-            <Image className="absolute scale-[0.65] top-[18rem] left-[190px] -rotate-6 md:top-[23rem] md:right-4 z-30  " src="/Mensaje.png" alt="RekonMedia Logo" height={20} width={280} quality={100} />
+            <Image className="absolute scale-[0.65] top-20 right-[263px] ift:right-[300px] md:top-24 md:left-10" src="/Navigation.png" alt="RekonMedia Logo" height={20} width={173} quality={100} />
+            <Image className="absolute scale-[0.65] top-[18rem] left-[190px] ift:left-[220px] -rotate-6 md:top-[23rem] md:right-4 z-30  " src="/Mensaje.png" alt="RekonMedia Logo" height={20} width={280} quality={100} />
             <Image className="absolute bottom-0 md:top-[50rem] z-[-40] " src="/linealarga.png" alt="RekonMedia Logo" height={20} width={2000} quality={100} />
             <Image className="absolute right-0 top-48 md:top-44 md:right-0 z-[-40] " src="/circle.svg" alt="RekonMedia Logo" height={20} width={304} quality={100} />
           </>}

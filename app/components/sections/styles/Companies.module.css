@@ -10,7 +10,7 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 40px;
+  width: 0px;
   background: linear-gradient(to right, rgb(13, 13, 13, 1), rgb(13, 13, 13, 1));
   pointer-events: none;
   z-index: 9000;
