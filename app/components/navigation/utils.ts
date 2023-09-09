@@ -13,19 +13,20 @@ export const NAVBAR_ITEMS:NAVBAR_ITEM[] = [
       to: "#services"
     },
     {
-      title: "FAQ",
-      to: "#faq"
-    },  
+      title: "FREE Audit",
+      to: "#freeAudit"
+    }, 
     {
       title: "FREE Guide",
       to: "/freeguide"
     },
     {
+      title: "FAQ",
+      to: "#faq"
+    }, 
+    {
       title: "Contact",
       to: "#contact"
     },
-    {
-      title: "FREE Audit",
-      to: "#freeAudit"
-    },
+    
   ] 

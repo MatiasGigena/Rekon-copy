@@ -50,7 +50,7 @@ const Navbar = ({ locomotiveScroll }: { locomotiveScroll: Scroll }) => {
     <div className="w-full flex items-center justify-center">
       <div
         id="navbar"
-        className="fixed bg-[#0D0D0D] lg:rounded-3xl w-full lg:w-[850px] xl:w-[990px] z-[999] top-0 transition-all durati lg:top-20">
+        className="fixed bg-[#16151C] lg:rounded-3xl w-full lg:w-[850px] xl:w-[990px] z-[999] top-0 transition-all durati lg:top-20">
         <div
           className="
           flex

@@ -18,7 +18,7 @@ const AboutCEO = () => {
     xl:mt-28
     relative
     ">
-      {width && width > 640 && <Image className=" absolute z-10 object-cover" src="/rm2.png" alt="" fill quality={100} />}
+      {width && width > 640 && <Image className=" absolute z-10 object-cover opacity-50" src="/rm2.png" alt="" fill quality={100} />}
       <Avatar
         className="w-[50%] z-20 h-[150px] xs:w-[69px] xs:h-[133px] 
     sm:w-[25%] sm:h-[150px]
@@ -43,13 +43,13 @@ const AboutCEO = () => {
   sm:h-[150px] sm:w-[80%]  
   md:h-[200px] md:w-[80%]
   lg:w-[610px] lg:h-[316px]
-  xl:w-[610px]  xl:h-[316px]
+  xl:w-[770px]  xl:h-[316px]
   xl:rounded-[16px] 
   overflow-hidden
   ">
         <div className="pb-2 pt-4 ift:pb-3 ift:pt-9 md:py-10 flex h-full justify-start ift:justify-between lg:mt-10 items-center w-full flex-col gap-1 xs:gap-3 xl:gap-10 relative">
           <p
-            className={`${width && width >= 640 ?  BrsonmediaSemibold.className : montserrat.className} font-semibold text-[10px]  text-[#FAFAFA]  lg:mb-7 xl:mb-0 w-[230px]  sm:text-base md:text-[20px]  lg:text-[23px] lg:leading-[30px] 2xl:text-[25.98px] md:w-[390px]  lg:w-[419px]`}>
+            className={`${width && width >= 640 ?  BrsonmediaSemibold.className : montserrat.className} font-semibold text-[10px]  text-[#FAFAFA]  lg:mb-7 xl:mb-0 w-[230px]  sm:text-base md:text-[20px]  lg:text-[23px] lg:leading-[35px] 2xl:text-[25.98px] md:w-[390px] lg:px-10  lg:w-full`}>
             "Your vision, our mission. We're committed to making your online presence a source of strength, not stress.
             If we don't deliver, you don't pay. We're all in, just like you."
           </p>
