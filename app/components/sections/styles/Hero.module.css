@@ -94,8 +94,8 @@
   @media(min-width: 1024px){
     .shapeImg{
       display: block;
-      min-width: 450px;
-      min-height: 450px;
+      min-width: 519px;
+      min-height: 477px;
       right: -11%;
       transform: translateX(4%);
       top: 40%;
