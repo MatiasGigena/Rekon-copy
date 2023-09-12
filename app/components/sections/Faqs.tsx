@@ -262,7 +262,7 @@ const FAQs = () => {
                  "
                  >
                       <Input
-                         id="email"
+                         id="email2"
                          label="Your email..."
                          type="text"
                          action={action}

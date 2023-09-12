@@ -93,7 +93,7 @@ const Companies = () => {
         "
         id="companies"
     >
-            <span className={`text-[#FAFAFA] !italic ${inter.className} text-xs md:text-base text-opacity-40     text-center w-full block mb-4 md:mb-8`}>Trusted by these companies:</span>
+            <span className={`text-[#FAFAFA] !italic ${inter.className} text-xs md:text-base text-opacity-70     text-center w-full block mb-4 md:mb-8`}>Trusted by these companies:</span>
              <div className={styles.mainContainer} >
               {
                 carouselReady && (
