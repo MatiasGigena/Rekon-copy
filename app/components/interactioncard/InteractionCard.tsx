@@ -17,7 +17,7 @@ const InteractionCard:React.FC<IInteractionCardProps> = ({icon: Icon, title, sub
       target={'_blank'}
     
     >
-                       <div className="flex justify-center gap-2 lg:gap-4 ml-2 lg:ml-0 w-full h-full items-center">
+                       <div className="flex justify-center gap-1 ml-2 lg:ml-0 w-full h-full items-center">
                          <Icon/>
                           <div
                               className=" flex flex-col justify-center flex-1 lg:max-w-[214px]"

@@ -36,16 +36,6 @@ const FollowUs = () => {
         items-center
         lg:order-last
     '>
-        <p
-            className={`
-                ${montserrat.className}
-                font-bold
-                text-base
-                text-white
-                md:text-2xl
-                md:hidden
-            `}
-        >Follow us</p>
         <div className='
             flex 
             justify-between

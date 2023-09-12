@@ -10,12 +10,12 @@ const AboutCEO = () => {
   const { width } = useWindowDimensions();
   return (
     <section
-      className="flex flex-col xs:flex-row justify-center items-center rounded-xl xl:rounded-[40px] gap-4 xl:gap-5 pt-2 xs:mt-12 sm:mt-14 xl:pt-16 xxs:mt-8 pb-24 
+      className="flex flex-col xs:flex-row justify-center items-center rounded-xl xl:rounded-[40px] gap-4 xl:gap-5 pt-2 xs:mt-12 sm:mt-14 xl:pt-16 xxs:mt-8 pb-16 
     xl:px-[17rem]
     xl:py-[11rem]
     px-6
     ift:px-7
-    xl:mt-28
+    xl:mt-16
     relative
     ">
       {width && width > 640 && <Image className=" absolute z-10 object-cover opacity-50" src="/rm2.png" alt="" fill quality={100} />}
@@ -47,9 +47,9 @@ const AboutCEO = () => {
   xl:rounded-[16px] 
   overflow-hidden
   ">
-        <div className="pb-2 pt-4 ift:pb-3 ift:pt-9 md:py-10 flex h-full justify-start ift:justify-between lg:mt-10 items-center w-full flex-col gap-1 xs:gap-3 xl:gap-10 relative">
+        <div className="pb-2 pt-4 xs:pb-2 xs:pt-5 ift:pb-3 ift:pt-9 md:py-10 flex h-full justify-start ift:justify-between lg:mt-10 items-center w-full flex-col gap-1 xs:gap-3 xl:gap-10 relative">
           <p
-            className={`${width && width >= 640 ?  BrsonmediaSemibold.className : montserrat.className} font-semibold text-[10px]  text-[#FAFAFA]  lg:mb-7 xl:mb-0 w-[230px]  sm:text-base md:text-[20px]  lg:text-[23px] lg:leading-[35px] 2xl:text-[25.98px] md:w-[390px] lg:px-10  lg:w-full`}>
+            className={`${width && width >= 640 ?  BrsonmediaSemibold.className : montserrat.className} font-semibold text-[10px]  text-[#FAFAFA]  lg:mb-7 xl:mb-0 w-[200px] ift:w-[230px]  sm:text-base md:text-[20px]  lg:text-[23px] lg:leading-[35px] 1/2xl:text-[25.98px] md:w-[390px] lg:px-10  lg:w-full`}>
             "Your vision, our mission. We're committed to making your online presence a source of strength, not stress.
             If we don't deliver, you don't pay. We're all in, just like you."
           </p>

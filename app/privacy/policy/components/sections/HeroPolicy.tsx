@@ -1,32 +1,29 @@
-
-import { montserrat } from "../../../../components/fonts";
-
+"use client"
+import { BrsonmediaMedium, BrsonmediaRegular, montserrat } from "../../../../components/fonts";
+import { useWindowDimensions } from "../../../../hooks/useWindowDimensions";
 
 const HeroPolicy = () => {
-
+const { width } = useWindowDimensions();
   return (
     <section className="
-      flex 
-      flex-col 
-      mt-14 
-      pb-5
-      xxs:gap-6 
-      xxs:pb-10
-      xs:gap-12 
-      xs:pt-6
-      sm:gap-16
-      sm:py-20 
-      md:gap-8
-      justify-center 
-      xxs:mt-20  
-      px-7 
-      xl:px-[17rem]
-      lg:p-[7rem]
+    flex 
+    flex-col 
+    mt-28 
+    xxs:gap-6 
+    xs:gap-12 
+    xs:pt-6
+    sm:gap-16
+    md:gap-8
+    justify-center 
+    lg:mt-44  
+    px-7 
+    xl:px-[17rem]
+    lg:px-[7rem]
     ">
      <div>
         <h1
         className={`
-            ${montserrat.className}
+            ${width && width >= 640 ?  BrsonmediaMedium.className : montserrat.className}
             text-[35px]
             leading-10
             xs:text-5xl
@@ -34,7 +31,7 @@ const HeroPolicy = () => {
             md:text-[86px]
             md:leading-[79.21px]
             text-white
-            font-bold
+            font-[600]
             mb-6
             md:mb-10
         `}
@@ -43,13 +40,13 @@ const HeroPolicy = () => {
         </h1>
         <h2
             className={`
-                ${montserrat.className}
-                font-semibold
-                text-xs
+                ${width && width >= 640 ?  BrsonmediaMedium.className : montserrat.className}
+                text-base
                 sm:text-base
                 md:text-lg
-                lg:text-xl
-                leading-5
+                lg:text-[24.47px]
+                leading-[28px]
+                lg:leading-[39.17px]
                 text-white
                 w-full
                 sm:w-3/4

@@ -1,12 +1,14 @@
-
+"use client"
 import { inter } from "../../../../components/fonts";
+import { useWindowDimensions } from "../../../../hooks/useWindowDimensions";
+import Image from "next/image";
 
 const PrivacyText = () => {
+    const {width } = useWindowDimensions();
     return (
         <div
             className="
                 relative
-                bg-[#0D0D0D]
                 h-full
                 flex 
                 flex-col 
@@ -18,7 +20,7 @@ const PrivacyText = () => {
                 px-7 
                 xl:px-[17rem]
                 lg:p-[7rem]
-                p-16
+                p-14
                 z-50
             "
         >
@@ -60,7 +62,7 @@ const PrivacyText = () => {
 <p>We use the Order Information that we collect generally to fulfill any orders placed through the Site (including processing your payment information, arranging for shipping, and providing you with invoices and/or order confirmations).</p>
 
 <p>Additionally, we use this Order Information to:</p>
-<ul>
+<ul className="list-disc ml-10 mt-2">
   <li>Communicate with you</li>
   <li>Screen our orders for potential risk or fraud</li>
   <li>When in line with the preferences you have shared with us, provide you with information or advertising relating to our products or services</li>
@@ -114,6 +116,15 @@ States.</p>
 <p>For more information about our privacy practices, if you have questions, or if you would like to make a complaint, please contact us by e-mail at <a href="mailto:contact@rekonmedia.com">contact@rekonmedia.com</a>.</p>
 
             </div>
+            {width && width >= 640 &&
+          <>
+            <Image className="absolute sm:scale-50 sm:top-[7rem] sm:right-[1rem] md:scale-50 md:top-[76rem] md:left-[640px] lg:scale-75 lg:top-[87rem] lg:left-[900px] xl:scale-100 xl:top-[100rem] xl:left-[1130px] 1/2xl:left-[1310px] 1/2xl:top-[105rem] 2xl:left-[1390px] 3xl:top-[110rem] 3xl:left-[1770px] " src="/Cone.png" alt="RekonMedia Logo" height={20} width={210} quality={100} />
+            <Image className="absolute sm:scale-75 sm:top-[1.5rem] sm:left-[3rem] md:scale-75 md:top-[40rem] md:left-[700px] lg:scale-100 lg:top-[60rem] lg:left-[950px] xl:top-[70rem] xl:left-[1200px] 1/2xl:top-[75rem] 1/2xl:left-[1360px] 2xl:top-[75rem] 2xl:left-[1470px] 3xl:top-[85rem] 3xl:left-[1850px] rotate-180 " src="/Torus Half.png" alt="RekonMedia Logo" height={20} width={145} quality={100} />
+            <Image className="absolute  sm:scale-0 lg:scale-100 xl:top-[35rem] lg:right-[400px] backdrop-blur-3xl xl:right-[600px] 2xl:right-[800px]  3xl:right-[1200px] z-[-30]" src="/shape2.png" alt="RekonMedia Logo" height={20} width={1500} quality={100} />
+            <Image className="absolute  sm:scale-0 md:scale-100 xl:top-[90rem]  md:left-0 z-[-30]" src="/circulorsa.png" alt="RekonMedia Logo" height={20} width={300} quality={100} />
+            <Image className="absolute  sm:scale-0 md:scale-100 md:top-[18rem] lg:top-[26rem] xl:top-[46rem] 2xl:top-[63rem] 3xl:top-[70rem]  md:right-0 z-[-30]" src="/circuloizq.png" alt="RekonMedia Logo" height={20} width={800} quality={100} />
+            <Image className="absolute sm:scale-0 md:scale-100 sm:top-[23rem] md:top-[15rem] left-0 z-[-20] opacity-50 " src="/rmfinal.png" alt="RekonMedia Logo" height={20} width={1950} quality={100} />
+          </>}
         </div>
     )
 }

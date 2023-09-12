@@ -23,10 +23,7 @@ export default function PrivacyPolicy() {
   return (
     <main className={` relative `}>
       <Navbar locomotiveScroll={locomotiveScroll}/>
-      <div className="relative max-w-[2080px] mx-auto ">
-        <HeroShape/>
-      </div>
-      <div className="max-w-[1920px] min-h-screen mx-auto  z-40 relative ">
+      <div className="max-w-[1920px] min-h-screen mx-auto z-40 relative ">
         <HeroPolicy/> 
         <PrivacyText/>      
       </div>
