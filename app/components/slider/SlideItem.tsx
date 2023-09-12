@@ -33,7 +33,7 @@ border-t
 
             
         `}>
-        <img src={Svg} alt="" className="bg-black color2 shadow2 h-40 rounded-2xl mt-[-5rem] " />
+        <img src={Svg} height={"auto"} width={"auto"} alt="" className="bg-black color2 shadow2 h-40 rounded-2xl mt-[-5rem] " />
 
         <p
           className={` 
