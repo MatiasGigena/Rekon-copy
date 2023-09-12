@@ -2,6 +2,7 @@
 
 import { BrsonmediaBold, inter, montserrat } from "../fonts";
 import { useWindowDimensions } from "../../hooks/useWindowDimensions";
+import Image from "next/image";
 
 interface SlideItemProps {
   id: number;
@@ -21,9 +22,9 @@ const SlideItem: React.FC<SlideItemProps> = ({ id, svg: Svg, text, description }
             items-center
             xl:w-[391.38px]
             relative
-borderB
-border-0
-border-t            
+            borderB
+            border-0
+            border-t            
             rounded-t-[16px]
           border-t-[#575757]
             px-6
@@ -33,7 +34,13 @@ border-t
 
             
         `}>
-        <img src={Svg} height={"auto"} width={"auto"} alt="" className="bg-black color2 shadow2 h-40 rounded-2xl mt-[-5rem] " />
+        <Image
+          src={Svg}
+          height={160}
+          width={160}
+          alt=""
+          className="bg-black color2 shadow2 rounded-2xl mt-[-5rem] "
+        />
 
         <p
           className={` 
