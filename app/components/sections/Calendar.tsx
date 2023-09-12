@@ -38,7 +38,7 @@ const Calendar = () => {
        
     >
          <div className="absolute bottom-[920px]"   id="contact"  data-listen-section></div>
-        <h6
+        <h1
             className={` 
             ${width && width >= 640 ? BrsonmediaMedium.className : montserrat.className}
                 text-[24px]
@@ -50,7 +50,7 @@ const Calendar = () => {
                 mt-20
             `} 
         
-        ><strong>Get in touch</strong> with us</h6>
+        ><strong>Get in touch</strong> with us</h1>
         <div
             className="
                 flex
