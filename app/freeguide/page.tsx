@@ -126,7 +126,7 @@ const FreeGuide = () => {
                                 lg:self-end
                                 lg:w-[242px]
                                 lg:h-[50px]
-                                md:rounded-[55px]
+                                rounded-[55px]
                                 hover:scale-105
                                 hover:transition-all
                                 hover:duration-300
@@ -143,7 +143,7 @@ const FreeGuide = () => {
                                 lg:self-end
                                 lg:w-[242px]
                                 lg:h-[50px]
-                                md:rounded-[55px]
+                                rounded-[55px]
                                 hover:scale-105
                                 hover:transition-all
                                 hover:duration-300
