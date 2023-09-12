@@ -51,8 +51,7 @@ const Input:React.FC<InputProps> = ({
                 ${inputStyles}
                 rounded-md
                 outline-none
-                text-[10px]
-                sm:text-[12px]
+                text-[12px]
                 text-black
                 lg:mt-1
                 lg:text-md

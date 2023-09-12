@@ -37,7 +37,7 @@ const Button:React.FC<ButtonProps> = (
             rounded-[9px] 
             ${width && width >= 640 ? BrsonmediaBold.className : montserrat.className}
             font-bold
-            xxs:text-[10px]
+            xxs:text-[12px]
             sm:text-md
             md:text-xl
             w-[164px]

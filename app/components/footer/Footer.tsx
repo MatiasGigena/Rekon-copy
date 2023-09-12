@@ -100,7 +100,7 @@ const Footer = ({ locomotiveScroll }: { locomotiveScroll: Scroll }) => {
       <p
         className={`
                 ${inter.className}
-                text-[10px]
+                text-[12px]
                 text-white
                 lg:hidden
             `}>

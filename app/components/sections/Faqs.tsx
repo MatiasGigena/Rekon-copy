@@ -185,7 +185,7 @@ const FAQs = () => {
                                 px-4
                                 border
                                 border-white
-                                text-[10px]
+                                text-[12px]
                                 md:text-lg
                                 lg:py-0
                             `}>
@@ -195,7 +195,7 @@ const FAQs = () => {
                             <AccordionContent
                                 className={` 
                                  ${inter.className}
-                                 text-[10px]
+                                 text-[12px]
                                  md:text-lg
                                  lg:py-2
                                 `}
@@ -235,7 +235,7 @@ const FAQs = () => {
                      className={`
                          ${BrsonmediaMedium.className}
                          font-normal
-                         text-[10px]
+                         text-[12px]
                          sm:text-lg
                          md:text-xl
                          lg:text-[27px]

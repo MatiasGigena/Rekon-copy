@@ -97,7 +97,7 @@ const FreeAudit = () => {
                         </div>
                     </div>
                     <div className='lg:px-[3.2rem] px-[38px] text-center'>
-                        <h4 className={`text-white text-[11.58px] sm:text-[21px] lg:text-[34px] ${width && width >= 640 ? BrsonmediaRegular.className : montserrat.className}`}>
+                        <h4 className={`text-white text-[12px] sm:text-[21px] lg:text-[34px] ${width && width >= 640 ? BrsonmediaRegular.className : montserrat.className}`}>
                             Submit this two simple details and we <strong>will get in touch shortly</strong>
                         </h4>
                     </div>
