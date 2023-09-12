@@ -38,7 +38,7 @@ const SlideItem: React.FC<SlideItemProps> = ({ id, svg: Svg, text, description }
           src={Svg}
           height={160}
           width={160}
-          alt=""
+          alt="market"
           className="bg-black color2 shadow2 rounded-2xl mt-[-5rem] "
         />
 
