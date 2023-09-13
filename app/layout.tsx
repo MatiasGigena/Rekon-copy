@@ -12,9 +12,9 @@ export const metadata = {
   icons: [
     {
       rel: 'icon',
-      type: 'image/svg',
+      type: 'image/png',
       sizes: '64x64',
-      url: '/app/icon.svg',
+      url: '/app/icon.png',
     },
     
   ],
